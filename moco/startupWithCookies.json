@@ -1,0 +1,39 @@
+[
+  {
+    "description": "模拟携带cookies的get请求",
+    "request": {
+      "uri": "/get/with/cookies",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "text": "这是一个必须携带cookies才能访问的get请求",
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description": "模拟携带cookies的post请求",
+    "request": {
+      "uri": "/post/with/cookies",
+      "method": "post",
+      "json": {
+        "aaa": "AAA",
+        "bbb": "BBB"
+      },
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "status": "201",
+      "json": {
+        "result": "success",
+        "statusa": "2001"
+      }
+    }
+  }
+]

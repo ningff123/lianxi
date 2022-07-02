@@ -1,0 +1,55 @@
+[
+  {
+    "description": "模拟不带参数的post请求",
+    "request": {
+      "uri": "/postDemo",
+      "method": "post"
+    },
+    "response": {
+      "text": "不带参数的post请求",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description": "模拟带参数的post请求",
+    "request": {
+      "uri": "/postWithParamForms",
+      "method": "post",
+      "forms": {
+        "name": "lining",
+        "age": "99"
+      }
+    },
+    "response": {
+      "json": {
+        "aa": "aaa",
+        "bb": "bbb"
+      },
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  },
+  {
+    "description": "模拟带参数的post请求",
+    "request": {
+      "uri": "/postWithParamJson",
+      "method": "post",
+      "json": {
+        "name": "lining",
+        "age": "99"
+      }
+    },
+    "response": {
+      "json": {
+        "cc": "ccc",
+        "dd": "ddd"
+      },
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  }
+]

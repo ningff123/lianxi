@@ -1,0 +1,28 @@
+[
+  {
+    "description": "模拟接口重定向到百度",
+    "request": {
+      "uri": "/redirect"
+    },
+    "redirectTo":"https://www.baidu.com"
+  },
+  {
+    "description": "模拟接口重定向到/redirectNew",
+    "request": {
+      "uri": "/redirectOld"
+    },
+    "redirectTo":"/redirectNew"
+  },
+  {
+    "description": "模拟接口重定向到/redirectNew",
+    "request": {
+      "uri": "/redirectNew"
+    },
+    "response":{
+      "json": {
+        "cc": "ccc",
+        "dd": "ddd"
+      }
+    }
+  }
+]

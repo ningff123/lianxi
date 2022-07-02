@@ -1,0 +1,21 @@
+[
+  {
+    "description": "模拟带headers信息的post请求",
+    "request": {
+      "uri": "/post/with/headers",
+      "method": "post",
+      "json": {
+        "aaa": "AAA",
+        "bbb": "BBB"
+      },
+      "headers": {
+        "content-type": "application/json"
+      }
+    },
+    "response": {
+      "json": {
+        "result": "success"
+      }
+    }
+  }
+]
